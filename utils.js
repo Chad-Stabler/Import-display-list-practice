@@ -12,3 +12,18 @@ export function renderCandy(candy) {
     container.append(imageEl, textEl);
     return container;
 }
+
+export function renderBoss(boss) {
+    const container = document.createElement('div');
+    const imageEl = document.createElement('img');
+    const textEl = document.createElement('p');
+    container.classList.add('boss');
+
+    imageEl.src = boss.image;
+
+    textEl.textContent = `${boss.name} is a boss found in ${boss.gameOfOrigin} and has attacks: ${boss.attacks}`;
+
+    container.append(imageEl, textEl);
+
+    return container;
+}

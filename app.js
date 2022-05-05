@@ -1,8 +1,8 @@
 // import functions and grab DOM elements
-import { candy } from './candies-data.js';
-import { renderCandy } from './utils.js';
+import { candy, bosses } from './outside-data.js';
+import { renderCandy, renderBoss } from './utils.js';
 const candyEl = document.getElementById('candies');
-
+const bossesEl = document.getElementById('bosses');
 
 // let state
 function displayCandyListings() {
@@ -12,6 +12,13 @@ function displayCandyListings() {
     }
 }
 displayCandyListings();
+
+function displayBosses() {
+    for (let boss of bosses) {
+        const newDiv = renderBoss(boss);
+        bossesEl.append(newDiv);
+    }
+}
 // set event listeners 
   // get user input
   // use user input to update state 
