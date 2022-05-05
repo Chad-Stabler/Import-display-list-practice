@@ -19,6 +19,7 @@ function displayBosses() {
         bossesEl.append(newDiv);
     }
 }
+displayBosses();
 // set event listeners 
   // get user input
   // use user input to update state 

@@ -114,6 +114,12 @@ footer {
     border-radius: 50%;
 }
 
+#bosses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .boss {
     width: 25%;
     display: flex;
