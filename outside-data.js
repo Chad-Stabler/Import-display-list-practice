@@ -9,3 +9,9 @@ export const bosses = [
     { name: 'Terramorphous The Invincible', gameOfOrigin: 'Borderlands 2', image: './assets/Terramorphous.jpg', attacks: [' Tendral Swing', ' Tentacle Spike', ' Rock Hurl', ' Laser/Fire Tentacles', ' Fire Mode'] },
     { name: 'Amygdala', gameOfOrigin: 'Bloodbourne', image: './assets/amygdala.jpg', attacks: [' Stomp', ' Exploding Laser', ' Acid Discharge', ' Low Arm Swing (+ Combo)', ' Flailing Combo', ' Forward Palm Thrust', ' Arm Smash', ' Jump', ' Downward Pincer Swipe'] }
 ];
+
+export const supercars = [
+    { name: 'Jesko Absolut', manufacturer: 'Koenigsegg', topSpeed: '330+', image: './assets/jesko.jpg' },
+    { name: 'Divo', manufacturer: 'Bugatti', topSpeed: '236', image: './assets/divo.jpg' }, 
+    { name: 'Huracan EVO', manufacturer: 'Lamborghini', topSpeed: '202', image: './assets/huracan.jpg' }
+];
