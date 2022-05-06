@@ -27,3 +27,18 @@ export function renderBoss(boss) {
 
     return container;
 }
+
+export function renderCar(car) {
+    const container = document.createElement('div');
+    const imageEl = document.createElement('img');
+    const textEl = document.createElement('p');
+    container.classList.add('car');
+
+    imageEl.src = car.image;
+
+    textEl.textContent = `The ${car.name} from ${car.manufacturer} is a beautiful super car with a ${car.topSpeed} mile per hour top speed!`;
+
+    container.append(imageEl, textEl);
+
+    return container;
+}

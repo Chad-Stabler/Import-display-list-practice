@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { candy, bosses } from './outside-data.js';
-import { renderCandy, renderBoss } from './utils.js';
+import { renderCandy, renderBoss, renderCar } from './utils.js';
 const candyEl = document.getElementById('candies');
 const bossesEl = document.getElementById('bosses');
 
@@ -20,6 +20,8 @@ function displayBosses() {
     }
 }
 displayBosses();
+
+
 // set event listeners 
   // get user input
   // use user input to update state 

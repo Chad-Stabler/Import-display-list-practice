@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { renderCandy, renderBoss, } from '../utils.js';
-import { candy, bosses } from '../outside-data.js';
+import { renderCandy, renderBoss, renderCar } from '../utils.js';
+import { candy, bosses, superCars } from '../outside-data.js';
 
 const test = QUnit.test;
 
@@ -20,9 +20,17 @@ test('test the render candy function', (expect) => {
 });
 
 test('test the render boss function', (expect) => {
-    const expected = `<div class="boss"><img src="./assets/starscourge-radahn.jpg"><p>Starscourge Radahn is a boss found in Elden Ring and has attacks: Gravity Arrows,Rain Arrows,Scatter Arrows,Random Slams and Sweeps,Double Slam,Dive Attack,Gravity Step,Quick Swings,Forward Slam,Chasing Slash,Quick Spin,Phase 1.5 Transformation (Cragblade and Gravitas),Cross Dive,Gravity Waves,Collapsing Stars,Phase 2 Transition,Summon Meteors,Spiralling Death</p></div>`;
+    const expected = `<div class="boss"><img src="./assets/starscourge-radahn.jpg"><p>Starscourge Radahn is a boss found in Elden Ring and has attacks:  Gravity Arrows, Rain Arrows, Scatter Arrows, Random Slams and Sweeps, Double Slam, Dive Attack, Gravity Step, Quick Swings, Forward Slam, Chasing Slash, Quick Spin, Phase 1.5 Transformation (Cragblade and Gravitas), Cross Dive, Gravity Waves, Collapsing Stars, Phase 2 Transition, Summon Meteors, Spiralling Death</p></div>`;
 
     const actual = renderBoss(bosses[0]);
 
     expect.equal(actual.outerHTML, expected, 'one step closer to completing this assignment');
+});
+
+test('test the supercar Render function', (expect) => {
+    const expected = `<div class="car"><img src="./assets/jesko.jpg"><p>The Jesko Absolut from Koenigsegg is a beautiful super car with a 330+ mile per hour top speed!</p></div>`;
+
+    const actual = renderCar(superCars[0]);
+
+    expect.equal(actual.outerHTML, expected, 'You did it!!');
 });
