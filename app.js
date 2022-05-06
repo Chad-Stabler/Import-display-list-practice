@@ -6,13 +6,19 @@ const bossesEl = document.getElementById('bosses');
 const carsEl = document.getElementById('superCars');
 
 // let state
+displayAll();
+function displayAll() {
+    displayCandyListings();
+    displayBosses();
+    displayCars();
+}
+
 function displayCandyListings() {
     for (let item of candy) {
         const newDiv = renderCandy(item);
         candyEl.append(newDiv);
     }
 }
-displayCandyListings();
 
 function displayBosses() {
     for (let boss of bosses) {
@@ -20,7 +26,6 @@ function displayBosses() {
         bossesEl.append(newDiv);
     }
 }
-displayBosses();
 
 function displayCars() {
     for (let car of superCars) {
@@ -28,8 +33,6 @@ function displayCars() {
         carsEl.append(newDiv);
     }
 }
-displayCars();
-
 
 // set event listeners 
   // get user input
